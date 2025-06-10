@@ -1,0 +1,38 @@
+{
+  "vehicle": {
+    "vehicle_id": "VEHICLE_001",
+    "make_model": "XeDAS Demo Vehicle",
+    "initial_location": [
+      37.7749,
+      -122.4194
+    ],
+    "max_speed": 120.0
+  },
+  "network": {
+    "port": 8080,
+    "bootstrap_peers": [
+      "127.0.0.1:8081"
+    ],
+    "max_peers": 10,
+    "discovery_enabled": true
+  },
+  "blockchain": {
+    "max_transactions_per_block": 100,
+    "block_timeout_seconds": 30,
+    "validate_blocks": true,
+    "data_directory": "./data"
+  },
+  "security": {
+    "enable_signing": false,
+    "enable_encryption": false,
+    "private_key_path": "./keys/private.pem",
+    "public_key_path": "./keys/public.pem"
+  },
+  "logging": {
+    "level": "info",
+    "console": true,
+    "file_enabled": true,
+    "file_path": "./logs/xedas.log",
+    "max_file_size_mb": 10
+  }
+}
